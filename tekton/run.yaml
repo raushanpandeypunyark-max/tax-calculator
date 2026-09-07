@@ -1,16 +1,23 @@
+```yaml
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
+
 metadata:
   name: tax-calculator-pipeline-run
+
 spec:
   pipelineRef:
     name: tax-calculator-pipeline
+
   params:
     - name: repo-url
-      value: https://github.com/raushanpandeypunyark-max/tax-calculator
+      value: "https://github.com/raushanpandeypunyark-max/tax-calculator"
+
     - name: branch
-      value: main
+      value: "main"
+
   workspaces:
     - name: pipeline-workspace
       persistentVolumeClaim:
         claimName: pipelinerun-pvc
+```
