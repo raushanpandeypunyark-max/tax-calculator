@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: tax-calculator-pipeline
+  name: pipeline
 spec:
   tasks:
     - name: npminstall
