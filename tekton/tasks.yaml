@@ -18,4 +18,4 @@ spec:
     - name: run-tests
       image: node:16-alpine
       script: |
-        npm test
+        npx jasmine
