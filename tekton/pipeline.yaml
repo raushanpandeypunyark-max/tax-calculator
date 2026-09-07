@@ -6,14 +6,14 @@ spec:
   tasks:
     - name: npminstall
       taskRef:
-        name: npm-build-task
+        name: npm
     - name: tests
       runAfter:
         - npminstall
       taskRef:
-        name: jasmine-test-task
+        name: jasmine
     - name: build
       runAfter:
         - tests
       taskRef:
-        name: npm-build-task
+        name: npm
