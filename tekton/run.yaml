@@ -7,9 +7,9 @@ spec:
     name: tax-calculator-pipeline
   params:
     - name: repo-url
-      value: https://github.com/raushanpandeypunyark-max/tax-calculator.git
+      value: "https://github.com/raushanpandeypunyark-max/tax-calculator.git"
     - name: branch
-      value: main
+      value: "main"
   workspaces:
     - name: pipeline-workspace
       persistentVolumeClaim:
